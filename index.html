@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>animation test</title>
+    <style>
+        @keyframes leftBox {
+            from {
+                left: 0;
+            }
+            to {
+                left: -49%;
+            }
+        }
+        @keyframes rightBox {
+            from {
+                left: 0;
+            }
+            to {
+                left: +49%;
+            }
+        }
+        @keyframes messer {
+            0% { margin-top: 0%; }
+            90% { margin-top: 200%; }
+            100% { margin-top: 200%; max-height: 0; max-width: 0; }
+        }
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+        #hintergrund {
+            position: absolute;
+            width: 100%;
+            z-index: -50;
+        }
+        .box {
+            z-index: 1;
+            width: 50%;
+            height: 2000px;
+            position: relative;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+        #boxL {
+            animation-name: leftBox;
+        }
+        #boxR {
+            float: right;
+            animation-name: rightBox;            
+        }
+        #messer {            
+            z-index: 2;
+            width: 30%;
+            position: absolute;
+            top: -100%;
+            margin-left: 48%;
+            animation-name: messer;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-out;
+            
+        }
+        .page {
+            position: absolute;
+            top: 0px;
+
+            margin-left: 75%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="aussehen">
+        <img id="hintergrund" src="./media/hintergrund.jpg" alt="hintergrund">
+        <div>
+            <img id="boxL" class="box" src="./media/boxL.jpg" alt="geschlossener karton">
+            <img id="boxR" class="box" src="./media/boxR.jpg" alt="geschlossener karton">
+        </div>
+        <img id="messer" src="./media/messer.png" alt="messer">
+    </div>
+    <div class="page">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produkte</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
