@@ -1,10 +1,491 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
     <title>erste webseite</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <a href="./animate.html">link zum animation idea mini-projekt</a>    
-</body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body id="home">
+    <!-- 
+        <a href="./animate.html">link zum animation idea mini-projekt</a>
+    -->
+    <!-- 
+        Notizen:
+            -margin vom body in den ribbons umgehen das die durchgängig sind
+            -würde gern bei den animes persönliche reviews schreiben
+            -schrift verändern für artikel im anime ribbon (muss leserlich sein)(japanisch etwas dünnerer font oder gesamte überschrift größer)
+            -animation der mc sollte easy sein padding left oder right animieren gg
+                gael fragen wegen scrollen animation
+            -genres oder mehr informationen hinzuufügen?
+
+        Probleme:
+            -kein platz für den embed player und weiss nich wie man son video rauspoppen lässt
+                (idee verworfen und das ribbon größer gemacht jetz passt der player)
+            -die charactere in der anime section sollen mit animationen in die page kommen aber das passiert wenn keiner guckt
+                ()
+            -hab gemerkt ich hab zu wenig zeit und hab das konzept geändert und alles auf ribbons(weil schnell einzufügen)
+        
+        TODO:
+            -wilkommensnachricht einleitung schreiben zb sowas wie: hier meine empfehlungen
+            -2 filme hinzufügen parasite und arrival
+            -mc divs immer abwechselnd rechts dann links
+            -animation der mc hinzufügen
+    -->
+    <div class="navbar-wrapper">
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gaming-section">Gaming</a></li>
+        <li><a href="#filme-section">Filme</a></li>
+        <li><a href="#anime-section">Anime</a></li>
+        <li><a href="#footer">Ende</a></li>
+      </ul>
+    </div>
+
+    <h1 style="text-align: center">Welcome to my world</h1>
+
+    <!-- Über mich section -->
+
+    <!-- Gaming section -->
+    <div id="gaming-section" class="site-section">
+      <div class="section-header">
+        <h2>GAMING</h2>
+      </div>
+      <div id="factorio" class="ribbon gaming background">
+        <div class="mc L">
+          <img
+            src="./media/gaming/factorio-mc.png"
+            alt="greifarme aus factorio"
+            width="475px"
+          />
+        </div>
+        <div class="middle-p">
+          <h2>Factorio</h2>
+          <h3>Handlung</h3>
+          <p>
+            Factorio ist ein Aufbauspiel, in dem es darum geht, Fabriken zu
+            bauen und zu unterhalten. Dazu baust du Ressourcen ab, erforschst
+            Technologien, baust eine Infrastruktur auf, automatisierst die
+            Produktion und bekämpfst Feinde.
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/J8SBp4SyvLc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cover">
+          <img
+            src="./media/gaming/factorio-cover.png"
+            alt="factorio coverart"
+          />
+        </div>
+      </div>
+      <div id="outer-wilds" class="ribbon gaming background">
+        <div class="cover">
+          <img
+            src="./media/gaming/outer-wilds-cover.jpg"
+            alt="outer wilds coverart"
+          />
+        </div>
+        <div class="middle-p">
+          <h2>Outer Wilds</h2>
+          <h3>Handlung</h3>
+          <p>
+            In Outer Wilds erkunden wir als namenloser Astronaut ein fiktives
+            Sonnensystem. Unser Ziel wird schnell klar – spätestens, wenn nach
+            den ersten zwanzig Minuten die Sonne explodiert. In 20-minütigen
+            Zeitschleifen suchen wir nach dem Grund und der Lösung für dieses
+            rätselhafte apokalyptische Phänomen.
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/d6LGnVCL1_A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mc R">
+          <img
+            src="./media/gaming/outer-wilds-mc.png"
+            alt="outer wilds ventures batch"
+            width="475px"
+          />
+        </div>
+      </div>
+      <div id="wow" class="ribbon gaming background">
+        <div class="mc L">
+          <img src="./media/gaming/wow-mc.png" alt="thrall" width="475px" />
+        </div>
+        <div class="middle-p">
+          <h2>World of Warcraft</h2>
+          <h3>Handlung</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+            accusantium vel doloremque tempore unde ducimus deleniti delectus
+            fugit perferendis earum consectetur possimus animi sint quae nemo
+            nobis, non, nisi asperiores?
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BCr7y4SLhck"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cover">
+          <img src="./media/gaming/wow-cover.jpg" alt="wow coverart" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Filme section -->
+    <div id="filme-section" class="site-section">
+      <div class="section-header">
+        <h2>FILME</h2>
+      </div>
+      <div id="inception" class="ribbon filme background">
+        <div class="mc L">
+          <img
+            src="./media/filme/inception-mc.png"
+            alt="leonardo dicaprio"
+            width="475px"
+          />
+        </div>
+        <div class="middle-p">
+          <h2>Inception</h2>
+          <h3>Handlung</h3>
+          <p>
+            Dank modernster Technologie ist es in naher Zukunft möglich, in
+            Träume und somit in das Unterbewusstsein von Menschen einzusteigen.
+            Das Einsteigen bedeutet mithin auch die Möglichkeit des Diebstahls
+            fremder und bisher ureigenster Ideen. Ein Meisterdieb auf dem
+            neuesten Gebiet der Firmenspionage ist Dom Cobb, was ihn nicht nur
+            im positiven Sinn zu einem besonders gefragten Mann macht. Um
+            endlich wieder ein normales Leben führen zu können, muss er nur noch
+            den einen letzten Job erledigen.
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YoHD9XEInc0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cover">
+          <img
+            src="./media/filme/inception-cover.jpg"
+            alt="inception coverart"
+          />
+        </div>
+      </div>
+      <div id="interstellar" class="ribbon filme background">
+        <div class="cover">
+          <img
+            src="./media/filme/interstellar-cover.jpg"
+            alt="interstellar coverart"
+          />
+        </div>
+        <div class="middle-p">
+          <h2>Interstellar</h2>
+          <h3>Handlung</h3>
+          <p>
+            Was Wissenschaftler, Politiker und Aktivisten seit Jahrzehnten
+            prophezeien, ist eingetreten: Die Menschheit steht kurz davor, an
+            einer globalen Nahrungsknappheit zugrunde zu gehen. Die einzige
+            Hoffnung der Weltbevölkerung besteht in einem geheimen Projekt der
+            US-Regierung, das von dem findigen Wissenschaftler Professor Brand
+            geleitet wird. Der Plan sieht vor, eine Expedition in ein anderes
+            Sternensystem zu starten, wo bewohnbare Planeten, Rohstoffe und vor
+            allem Leben vermutet werden. Der Ingenieur und ehemalige NASA-Pilot
+            Cooper und Brands Tochter Amelia führen die Besatzung an, die sich
+            auf eine Reise ins Ungewisse begibt: Wurmlöcher sind so gut wie
+            unerforscht und niemand kann mit Sicherheit sagen, was die Crew auf
+            der anderen Seite erwartet. Ebenso ist unsicher, ob und wann Cooper
+            und Brand wieder auf die Erde zurückkehren. Coopers Kinder, Tochter
+            Murph und Sohn Tom, müssen mit Schwiegervater Donald zurückbleiben
+            und auf seine Wiederkehr hoffen...
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zSWdZVtXT7E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mc R">
+          <img
+            src="./media/filme/interstellar-mc.png"
+            alt="interstellar main character"
+            width="475px"
+          />
+        </div>
+      </div>
+      <div id="whiplash" class="ribbon filme background">
+        <div class="mc L">
+          <img
+            src="./media/filme/whiplash-mc.png"
+            alt="miles teller"
+            width="475px"
+          />
+        </div>
+        <div class="middle-p">
+          <h2>Whiplash</h2>
+          <h3>Handlung</h3>
+          <p>
+            Der 19-jährige Andrew Neiman ist ein begnadeter Schlagzeuger. In
+            einer der renommiertesten Musikschulen des Landes wird er vom
+            Dirigenten Terence Fletcher unter die Fittiche genommen. Der
+            bekannte Bandleader fördert den jungen Drummer, aber er fordert ihn
+            noch mehr: Mit rabiaten Unterrichtsmethoden, die immer mehr zu
+            Gewaltexzessen ausarten, will er Andrew zu Höchstleistungen treiben
+            und führt ihn an seine physischen und emotionalen Grenzen. Der
+            Nachwuchsmusiker stellt sich der Tortur, denn es ist sein
+            sehnlichster Wunsch, einer der größten Schlagzeuger der Welt zu
+            werden. Während sein besorgter Vater Jim immer mehr an den Methoden
+            und den Absichten des Lehrers zweifelt, hält Andrew hartnäckig
+            durch. Doch wieviel mehr kann der Teenager noch ertragen?
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xSMsNbdSPTA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cover">
+          <img src="./media/filme/whiplash-cover.jpg" alt="whiplash coverart" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Anime section -->
+    <div id="anime-section" class="site-section">
+      <div class="section-header">
+        <h2 style="text-align: center">Anime</h2>
+        <p style="text-align: center">
+          Hier findest du eine kleine Auswahl an von mir bewerteten 10/10
+          Animes. Wenn du wissen möchtest welche Bewertung ich welchem Anime
+          gegeben habe dann schau doch auf meiner MyAnimeList-Page vorbei:
+          <span>
+            <a
+              href="https://myanimelist.net/animelist/Lorp91?status=2&order=4&order2=0"
+              target="_blank"
+              >MyAnimeList</a
+            >
+          </span>
+        </p>
+      </div>
+
+      <div id="mononoke" class="ribbon background">
+        <div class="mc L">
+          <img
+            src="./media/anime/mononokehime-slide.png"
+            alt="Mononoke hime MC"
+            style="width: 200%; margin-left: -90%"
+          />
+        </div>
+        <div class="middle-p">
+          <h2>Princess Mononoke - <span class="jp">もののけ姫</span></h2>
+          <h3>Synopsis</h3>
+          <p>
+            When an Emishi village is attacked by a fierce demon boar, the young
+            prince Ashitaka puts his life at stake to defend his tribe. With its
+            dying breath, the beast curses the prince's arm, granting him
+            demonic powers while gradually siphoning his life away. Instructed
+            by the village elders to travel westward for a cure, Ashitaka
+            arrives at Tatara, the Iron Town, where he finds himself embroiled
+            in a fierce conflict: Lady Eboshi of Tatara, promoting constant
+            deforestation, stands against Princess San and the sacred spirits of
+            the forest, who are furious at the destruction brought by the
+            humans. As the opposing forces of nature and mankind begin to clash
+            in a desperate struggle for survival, Ashitaka attempts to seek
+            harmony between the two, all the while battling the latent demon
+            inside of him. Princess Mononoke is a tale depicting the connection
+            of technology and nature, while showing the path to harmony that
+            could be achieved by mutual acceptance. [Written by MAL Rewrite]
+          </p>
+          <h3>Background</h3>
+          <p>
+            In 1997 the film won Best Japanese Movie, Best Animation and
+            Japanese Movie Fans' Choice awards during the 52nd Mainichi Film
+            Awards. In 1998 the film won the Best Picture award during the 21st
+            Japan Academy Awards.
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/4OiMOHRDs14"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cover">
+          <img
+            src="./media/anime/mononokehime.jpg"
+            alt="mononokehime-boxcover"
+          />
+        </div>
+      </div>
+      <div id="evangelion" class="ribbon background">
+        <div class="cover">
+          <img
+            src="./media/anime/evangelion-cover.jpg"
+            alt="evangelion-boxcover"
+          />
+        </div>
+        <div class="middle-p">
+          <h2>
+            Neon Genesis Evangelion -
+            <span class="jp">新世紀エヴァンゲリオン</span>
+          </h2>
+          <h3>Synopsis</h3>
+          <p>
+            Fifteen years after a cataclysmic event known as the Second Impact,
+            the world faces a new threat: monstrous celestial beings called
+            "Angels" invade Tokyo-3 one by one. Mankind is unable to defend
+            themselves against the Angels despite utilizing their most advanced
+            munitions and military tactics. The only hope for human salvation
+            rests in the hands of NERV, a mysterious organization led by the
+            cold Gendou Ikari. NERV operates giant humanoid robots dubbed
+            "Evangelions" to combat the Angels with state-of-the-art advanced
+            weaponry and protective barriers known as Absolute Terror Fields.
+            [Written by MAL Rewrite]
+          </p>
+          <h3>Background</h3>
+          <p>
+            Director Hideaki Anno's depression is what led to the dark themes of
+            Neon Genesis Evangelion. Budgetary problems and parental complaints
+            about content led to the original ending being scrapped and replaced
+            with an extremely limited-animation ending breaking from the main
+            plot. A movie, End of Evangelion, was later made based in part on
+            the original planned ending and in part on Anno's increasing
+            frustration with the otaku fanbase. The series' mix of
+            psychoanalysis, religious symbolism, and genre deconstruction proved
+            extremely influential on mature anime in the late '90s onward. The
+            Japan Media Arts Festival in 2006 ranked it as the most popular
+            anime of all time.
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/13nSISwxrY4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mc R">
+          <img src="./media/anime/evangelion-mc.png" alt="evangelion MC" />
+        </div>
+      </div>
+      <div id="koeno" class="ribbon background">
+        <div class="mc L">
+          <img src="./media/anime/koeno-mc.png" alt="koe no kotaci MC" />
+        </div>
+        <div class="middle-p">
+          <h2>A Silent Voice - <span class="jp">聲の形</span></h2>
+          <h3>Synopsis</h3>
+          <p>
+            As a wild youth, elementary school student Shouya Ishida sought to
+            beat boredom in the cruelest ways. When the deaf Shouko Nishimiya
+            transfers into his class, Shouya and the rest of his class
+            thoughtlessly bully her for fun. However, when her mother notifies
+            the school, he is singled out and blamed for everything done to her.
+            With Shouko transferring out of the school, Shouya is left at the
+            mercy of his classmates. He is heartlessly ostracized all throughout
+            elementary and middle school, while teachers turn a blind eye. Now
+            in his third year of high school, Shouya is still plagued by his
+            wrongdoings as a young boy. Sincerely regretting his past actions,
+            he sets out on a journey of redemption: to meet Shouko once more and
+            make amends. Koe no Katachi tells the heartwarming tale of Shouya's
+            reunion with Shouko and his honest attempts to redeem himself, all
+            while being continually haunted by the shadows of his past. [Written
+            by MAL Rewrite]
+          </p>
+          <h3>Background</h3>
+          <p>
+            Winner of the Excellence Award on the 20th Japan Media Arts
+            Festival.
+          </p>
+          <h3>Trailer</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/nfK6UgLra7g"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cover">
+          <img
+            src="./media/anime/koeno-cover.jpg"
+            alt="koe no kotachi-boxcover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer id="footer">
+      <table>
+        <tr>
+          <th>created:</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>with:</td>
+          <td>only HTML and CSS</td>
+        </tr>
+        <tr>
+          <td>where:</td>
+          <td>DCI Digital Career Institute gGmbH</td>
+        </tr>
+        <tr>
+          <td>when:</td>
+          <td>03.2022</td>
+        </tr>
+        <tr>
+          <td>who:</td>
+          <td>Florian Ranze</td>
+        </tr>
+      </table>
+    </footer>
+  </body>
 </html>

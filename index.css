@@ -1,3 +1,141 @@
-a {
-    font-size: large;
+body {
+    margin: 0;    
+}
+.navbar-wrapper {
+    background-color: gray;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: 625px;
+    position: sticky;
+    top: 0;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 10px 0px 10px 10px;
+}
+.navbar li {
+    display: inline-block;
+    margin-left: 10px;
+    background-color: darkgray;
+    padding: 10px 20px;
+    width: 75px;
+    text-align: center;
+}
+.navbar li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Merriweather', serif;
+}
+.section-header {
+    height: 150px;
+    text-align: center;
+    background-color: rgb(165, 165, 165);
+    font-family: 'Merriweather', serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ribbon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+.ribbon.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ribbon#factorio {
+    background-image: url(./media/gaming/factorio-back.jpg);
+}
+.ribbon#outer-wilds {
+    background-image: url(./media/gaming/outer-wilds-back.jpg);
+}
+.ribbon#wow {
+    background-image: url(./media/gaming/wow-back.jpg);
+}
+.ribbon#inception {
+    background-image: url(./media/filme/inception-back.jpg);
+}
+.ribbon#interstellar {
+    background-image: url(./media/filme/interstellar-back.png);
+}
+.ribbon#whiplash {
+    background-image: url(./media/filme/whiplash-back.jpg);
+}
+.ribbon#mononoke {
+    background-image: url(./media/anime/mononoke-forest.jpg);
+}
+.ribbon#evangelion {
+    background-image: url(./media/anime/evangelion-back.jpg);
+}
+.ribbon#koeno {
+    background-image: url(./media/anime/koeno-back.jpg);
+}
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.cover img {
+    width: 70%;
+    height: 70%;
+    border: solid black 2px;
+}
+.mc {
+    flex: 1;
+    height: 800px;
+    display: flex; 
+    align-items: flex-end; 
+    /* margin-top: auto; */
+}
+.mc img {
+    max-height: 750px;
+    /* width: 25vw; */
+}
+.mc.R img {
+    /* padding-left: 250%; */
+    animation: mcR;
+    animation-duration: 3s;    
+    animation-fill-mode: both;
+}
+.mc.L img {
+    padding-right: 2%;
+}
+.middle-p {
+    background-color: rgba(128, 128, 128, 0.425);
+    flex: 2;
+    align-items: center;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: rgb(255, 255, 255); 
+}
+.middle-p.jp {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+footer {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    background-image: linear-gradient(to top, rgb(129, 129, 129), rgb(247, 247, 247));
+}
+footer table {
+    padding-top: 50px;
+}
+footer table th, td {
+    color: rgb(129, 128, 128);
+}
+@keyframes mcR {
+    from { padding-left: 100%;}
+    to { padding-left: 2%;}
 }
